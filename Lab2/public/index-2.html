@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from webapplayers.com/luna_admin-v1.1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Aug 2016 14:23:15 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Page title -->
+    <title>LUNA | Responsive Admin Theme</title>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="vendor/animate.css/animate.css"/>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css"/>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="styles/pe-icons/pe-icon-7-stroke.css"/>
+    <link rel="stylesheet" href="styles/pe-icons/helper.css"/>
+    <link rel="stylesheet" href="styles/stroke-icons/style.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- Wrapper-->
+<div class="wrapper">
+
+    <!-- Header-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index-2.html">
+                   CRUD
+                   
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="#">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control" placeholder="Search data for analysis" style="width: 175px">
+                </form>
+               
+            </div>
+        </div>
+    </nav>
+    <!-- End header-->
+
+    <!-- Navigation-->
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+
+                <li>
+                    <a href="#monitoring" data-toggle="collapse" aria-expanded="false">
+                        CRUD USER<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="monitoring" class="nav nav-second collapse">
+                        <li><a href="metrics.html"> Delete</a></li>
+                        <li><a href="usage.html"> Show user</a></li>
+                        <li><a href="activity.html"> Reset password</a></li>
+                        <li><a href="tabs.html"> Actualizar</a></li>
+                    </ul>
+                </li>
+               
+                <li>
+                    <a href="#uielements" data-toggle="collapse" aria-expanded="false">
+                        CRUD STORY<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="uielements" class="nav nav-second collapse">
+                        <li><a href="panels.html">CREAR</a></li>
+                        <li><a href="typography.html">LEER HISTORIA</a></li>
+                        <li><a href="icons.html">ACTUALIZAR HISTORIA</a></li>
+                        <li><a href="buttons.html">ELIMINAR HISTORIA</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </aside>
+    <!-- End navigation-->
+
+
+    <!-- Main content-->
+    <section class="content">
+            <div class="container-fluid">
+
+              <h1>
+                  Bienvenido usuario, seleccione el crud que quiere modificar
+              </h1>
+              <img src="data:image/png;base64,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">
+            </div>
+    </section>
+    <!-- End main content-->
+
+</div>
+<!-- End wrapper-->
+
+<!-- Vendor scripts -->
+<script src="vendor/pacejs/pace.min.js"></script>
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/toastr/toastr.min.js"></script>
+<script src="vendor/sparkline/index.js"></script>
+<script src="vendor/flot/jquery.flot.min.js"></script>
+<script src="vendor/flot/jquery.flot.resize.min.js"></script>
+<script src="vendor/flot/jquery.flot.spline.js"></script>
+
+<!-- App scripts -->
+<script src="scripts/luna.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+
+        // Sparkline charts
+        var sparklineCharts = function () {
+            $(".sparkline").sparkline([20, 34, 43, 43, 35, 44, 32, 44, 52, 45], {
+                type: 'line',
+                lineColor: '#FFFFFF',
+                lineWidth: 3,
+                fillColor: '#404652',
+                height: 47,
+                width: '100%'
+            });
+
+            $(".sparkline7").sparkline([10, 34, 13, 33, 35, 24, 32, 24, 52, 35], {
+                type: 'line',
+                lineColor: '#FFFFFF',
+                lineWidth: 3,
+                fillColor: '#f7af3e',
+                height: 75,
+                width: '100%'
+            });
+
+            $(".sparkline1").sparkline([0, 6, 8, 3, 2, 4, 3, 4, 9, 5, 3, 4, 4, 5, 1, 6, 7, 15, 6, 4, 0], {
+                type: 'line',
+                lineColor: '#2978BB',
+                lineWidth: 3,
+                fillColor: '#2978BB',
+                height: 170,
+                width: '100%'
+            });
+
+            $(".sparkline3").sparkline([-8, 2, 4, 3, 5, 4, 3, 5, 5, 6, 3, 9, 7, 3, 5, 6, 9, 5, 6, 7, 2, 3, 9, 6, 6, 7, 8, 10, 15, 16, 17, 15], {
+
+                type: 'line',
+                lineColor: '#fff',
+                lineWidth: 3,
+                fillColor: '#393D47',
+                height: 70,
+                width: '100%'
+            });
+
+            $(".sparkline5").sparkline([0, 6, 8, 3, 2, 4, 3, 4, 9, 5, 3, 4, 4, 5], {
+                type: 'line',
+                lineColor: '#f7af3e',
+                lineWidth: 2,
+                fillColor: '#2F323B',
+                height: 20,
+                width: '100%'
+            });
+            $(".sparkline6").sparkline([0, 1, 4, 2, 2, 4, 1, 4, 3, 2, 3, 4, 4, 2, 4, 2, 1, 3], {
+                type: 'bar',
+                barColor: '#f7af3e',
+                height: 20,
+                width: '100%'
+            });
+
+            $(".sparkline8").sparkline([4, 2], {
+                type: 'pie',
+                sliceColors: ['#f7af3e', '#404652']
+            });
+            $(".sparkline9").sparkline([3, 2], {
+                type: 'pie',
+                sliceColors: ['#f7af3e', '#404652']
+            });
+            $(".sparkline10").sparkline([4, 1], {
+                type: 'pie',
+                sliceColors: ['#f7af3e', '#404652']
+            });
+            $(".sparkline11").sparkline([1, 3], {
+                type: 'pie',
+                sliceColors: ['#f7af3e', '#404652']
+            });
+            $(".sparkline12").sparkline([3, 5], {
+                type: 'pie',
+                sliceColors: ['#f7af3e', '#404652']
+            });
+            $(".sparkline13").sparkline([6, 2], {
+                type: 'pie',
+                sliceColors: ['#f7af3e', '#404652']
+            });
+        };
+
+        var sparkResize;
+
+        // Resize sparkline charts on window resize
+        $(window).resize(function () {
+            clearTimeout(sparkResize);
+            sparkResize = setTimeout(sparklineCharts, 100);
+        });
+
+        // Run sparkline
+        sparklineCharts();
+
+
+        // Flot charts data and options
+        var data1 = [ [0, 16], [1, 24], [2, 11], [3, 7], [4, 10], [5, 15], [6, 24], [7, 30] ];
+        var data2 = [ [0, 26], [1, 44], [2, 31], [3, 27], [4, 36], [5, 46], [6, 56], [7, 66] ];
+
+        var chartUsersOptions = {
+            series: {
+                splines: {
+                    show: true,
+                    tension: 0.4,
+                    lineWidth: 1,
+                    fill: 1
+
+                }
+
+            },
+            grid: {
+                tickColor: "#404652",
+                borderWidth: 0,
+                borderColor: '#404652',
+                color: '#404652'
+            },
+            colors: [ "#f7af3e","#DE9536"]
+        };
+
+        $.plot($("#flot-line-chart"), [data2, data1], chartUsersOptions);
+
+
+        // Run toastr notification with Welcome message
+        setTimeout(function(){
+            toastr.options = {
+                "positionClass": "toast-top-right",
+                "closeButton": true,
+                "progressBar": true,
+                "showEasing": "swing",
+                "timeOut": "6000"
+            };
+            toastr.warning('<strong>Welcome to LUNA v.1.1</strong> <br/><small>Premium admin theme with Dark UI style. </small>');
+        },1600)
+
+
+    });
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-4625583-2', 'webapplayers.com');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from webapplayers.com/luna_admin-v1.1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Aug 2016 14:23:15 GMT -->
+</html>

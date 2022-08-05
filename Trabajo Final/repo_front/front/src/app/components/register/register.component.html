@@ -1,0 +1,70 @@
+<header id="header" class="header d-flex align-items-center fixed-top bg-dark">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="#" class="logo d-flex align-items-center">
+      
+        <img src="assets/img/logo-tecsup-bl.webp" class="d-flex align-items-center" width="150" height="200">
+
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+            <button type="button" class="btn btn-primary" routerLink="/login">Acceder</button>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+<div  class="container-fluid login ">
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form [formGroup]="userForm" (ngSubmit) = "agregarUser()">
+                <h2 class="text-center">Register</h2>
+                <br>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control form-control-lg"
+                    placeholder="Enter a valid email address" formControlName="email" required/>
+                  <div class="text-danger" 
+                  *ngIf="userForm.get('email')?.hasError('required') && userForm.get('email')?.touched">
+                    <span>Email <strong>obligatorio</strong></span>
+                  </div>
+                  </div>
+      
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                  <input type="password" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="Enter password" formControlName="password" required />
+                    <div class="text-danger" 
+                    *ngIf="userForm.get('password')?.hasError('required') && userForm.get('password')?.touched">
+                      <span>Password <strong>obligatorio</strong></span>
+                    </div>
+                </div>
+      
+                
+      
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="submit" [disabled]="userForm.invalid" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;" >Register</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">You have an account? 
+                    <a href="#!"
+                      class="link-danger"  routerLink="/login" >Login</a></p>
+                </div>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+</div>

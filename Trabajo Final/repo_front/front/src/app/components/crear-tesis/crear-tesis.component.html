@@ -1,0 +1,104 @@
+<header id="header" class="header d-flex align-items-center fixed-top bg-dark">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="#" class="logo d-flex align-items-center">
+        <img src="assets/img/logo-tecsup-bl.webp" class="d-flex align-items-center" width="150" height="200">
+
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar text-white" >
+      <button routerLink="/listar-tesis-admin" class="btn btn-link">Tesis</button>
+      </nav>
+
+    </div>
+
+  </header>
+  <br>  <br>  <br>    <br>  <br>
+  <div class="container-fluid" >
+    <form class="form" [formGroup]="tesisForm" >
+        <div class="row">
+            <h4> Ingrese los datos para el registro de tesis</h4>
+            <br> <br> 
+            <div class="col-md-4 co1">
+                
+                <div class="input">
+                    <label for="inputPassword2" class="mb-3">Tema de Investigacion</label>
+                    <input type="text" formControlName="tema" class="form-control" id="inputPassword2" >
+                    
+                  </div>
+                  <div class="input">
+                    <label for="exampleFormControlTextarea1" class="form-label">Resumen</label>
+                    <textarea class="form-control"  formControlName="resumen" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="input">
+                    <label for="inputPassword2" class="mb-3">Fecha de publicacion</label>
+                    <input type="date" formControlName="fecha_publicacion" class="form-control" id="inputPassword2" >
+                    
+                  </div>
+                
+                  <div class="input">
+                    <label for="inputPassword2" class="mb-3">Carrera</label>
+                    <input type="text" formControlName="carrera" class="form-control" id="inputPassword2" >
+                    
+                  </div>
+                 <div class="input">
+                    <label for="inputPassword2" class="mb-3">Tipo de Contenido</label>
+                    <select class="form-select " aria-label="" formControlName="tipo_contenido">
+                      <option selected>--</option>
+                      <option value="1">científica</option>
+                      <option value="2">educativa</option>
+                      <option value="3">comercial</option>
+                    </select>
+                 </div>
+
+                
+            </div>
+           
+            <div class="col-md-4 co2">
+                
+                  <div class="input">
+                    <label for="inputPassword2" class="mb-3">Autor 1</label>
+                    <input type="text" formControlName="autor1" class="form-control" id="inputPassword2" >
+                    
+                  </div>
+                  <div class="input">
+                    <label for="inputPassword2" class="mb-3">Autor2</label>
+                    <input type="text" formControlName="autor2" class="form-control" id="inputPassword2" >
+                    
+                  </div>
+                  <div class="input">
+                    <label for="inputPassword2" class="mb-3">Autor3</label>
+                    <input type="text" formControlName="autor3" class="form-control" id="inputPassword2" >
+                    
+                  </div>
+
+            </div>
+            <div class="col-md-4 co3">
+                <div class="input">
+                    <label for="inputPassword2" class="mb-3">Tipo</label>
+                    <select class="form-select " formControlName="tipo"  aria-label="Default select example">
+                      <option selected>--</option>
+                      <option value="2">publica</option>
+                      <option value="3">privada</option>
+                    </select>
+                 </div>
+                <div class="input2">
+                    <label for="inputPassword2" class="mb-3">Palabras Clave</label>
+                    <input type="text" formControlName="palabras_clave" class="form-control" id="inputPassword2" >
+                    
+                </div>
+                <div class="input2">
+                    <label for="formFile" class="form-label">Archivo de Tesis</label>
+                    
+                    <input class="form-control" formControlName="archivo" type="file" id="formFile">
+                  </div>
+
+            </div>
+        </div>
+        <button type="button" class="btn btn-success d-flex b1">Finalizar</button>
+    </form>
+    
+</div>

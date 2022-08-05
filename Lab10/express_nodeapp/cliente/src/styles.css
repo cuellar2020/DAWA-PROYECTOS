@@ -1,0 +1,9 @@
+body{
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    background: linear-gradient(to right, #1F1C18, #209aad)
+}
+.titulo{
+    font-size: 1.8rem;
+    font-family: 'Roboto Flex', sans-serif;
+}

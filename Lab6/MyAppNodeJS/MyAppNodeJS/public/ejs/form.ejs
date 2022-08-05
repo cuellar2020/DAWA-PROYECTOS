@@ -1,0 +1,14 @@
+<%- include('../partials/footer'); %>
+<% if (users.length >0) { %>
+    <% users.forEach(usuario => { %>
+        <tr>
+            <th scope="row"><%= usuario.id %></th>
+            <td><%= usuario.username %></td>
+            <td><%= usuario.email %></td>
+            
+          </tr>
+
+  <%  }) %>
+    
+
+<%  } %>
